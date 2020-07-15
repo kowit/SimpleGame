@@ -6,6 +6,7 @@ import java.awt.event.KeyListener;
 public class MyKeyListener implements KeyListener {
     @Override
     public void keyTyped(KeyEvent e) {
+        System.out.println("key released = " + KeyEvent.getKeyText(e.getKeyCode()));
     }
 
     @Override

@@ -8,14 +8,12 @@ public class ApplicationDatabase {
 
     private static final ArrayList<User> userDb = new ArrayList<User>();
 
-    public ApplicationDatabase() {
-    }
-
     public static ArrayList<User> initialize() {
         return userDb;
     }
 
     public static void addUser(User user) {
+        System.out.println("user: " + user);
         userDb.add(user);
     }
 

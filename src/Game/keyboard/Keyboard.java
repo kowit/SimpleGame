@@ -5,9 +5,15 @@ import java.awt.event.KeyListener;
 
 @SuppressWarnings("serial")
 public class Keyboard extends JPanel {
+    private KeyListener keyListener;
+
     public Keyboard() {
-        KeyListener listener = new MyKeyListener();
-        addKeyListener(listener);
-        setFocusable(true);
+        keyListener = new MyKeyListener();
+        // addKeyListener(keyListener);
+        // setFocusable(true);
+    }
+
+    public KeyListener getKeyListener() {
+        return this.keyListener;
     }
 }

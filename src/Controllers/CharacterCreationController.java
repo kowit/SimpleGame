@@ -5,10 +5,7 @@ import Views.GameView;
 import com.kowit.ApplicationDatabase;
 
 public class CharacterCreationController extends ApplicationController {
-    public CharacterCreationController() {
-    }
-
-    public static void post(String characterName){
+    public static void post(String characterName) {
         // Build the user
         User user = new User.Builder(1).withName(characterName).build();
 
